@@ -9,6 +9,6 @@ question=$(
     --height="120"
 )
 case $question in
-    "Windows風UI" ) xfpanel-switch load /usr/share/serene-themechanger/windowsue.tar.bz2 | xfpanel-switch load /usr/share/serene-themechanger/windowssita.tar.bz2 ;;
-    "Mac風UI" ) xfpanel-switch load /usr/share/serene-themechanger/macue.tar.bz2 | xfpanel-switch load /usr/share/serene-themechanger/macsita.tar.bz2 ;;
+    "Windows風UI" ) xfpanel-switch load /usr/share/serene-themechanger/windows.tar.bz2 ;;
+    "Mac風UI" ) xfpanel-switch load /usr/share/serene-themechanger/mac.tar.bz2 ;;
 esac
