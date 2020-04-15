@@ -1,0 +1,14 @@
+question=$(
+    zenity \
+    --info \
+    --text="Xfceパネルを変更しますか？" \
+    --ok-label="終了する" \
+    --extra-button="Windows風UI" \
+    --extra-button="Mac風UI" \
+    --width="400" \
+    --height="120"
+)
+case $question in
+    "Windows風UI" ) xfpanel-switch load /usr/share/serene-themechanger/windowsue.tar.bz2 | xfpanel-switch load /usr/share/serene-themechanger/windowssita.tar.bz2 ;;
+    "Mac風UI" ) xfpanel-switch load /usr/share/serene-themechanger/macue.tar.bz2 | xfpanel-switch load /usr/share/serene-themechanger/macsita.tar.bz2 ;;
+esac
